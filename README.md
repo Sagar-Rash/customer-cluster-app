@@ -2,20 +2,29 @@
 Determines cluster which a customer belongs in on a scatter plot given age, income, and spending score.
 ## Features
 Streamlit application with input form for Age, Income, and Spending Score.
+
 Prediction of customer cluster position (helps with determining what to target them with).
+
 Accessible via Streamlit Community Cloud: https://customer-cluster-app-sr.streamlit.app/
+
 # Dataset
 The dataset is the Mall Customer dataset which has multiple copies available on Kaggle. The main features used in this model are
 
 Age
+
 Annual Income (in Thousands of Dollars)
+
 Spending Score (1-100)
 
 # Technologies Used
 Streamlit: For the application.
+
 Scikit-learn: For model training and evaluation.
+
 Pandas and NumPy: For data preprocessing and manipulation.
+
 Matplotlib and Seaborn: For exploratory data analysis and visualization.
+
 # Model
 The predictive model was trained using a Mall Customer dataset which has multiple copies available on Kaggle.
 

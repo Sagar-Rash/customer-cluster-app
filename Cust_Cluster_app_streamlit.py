@@ -33,11 +33,11 @@ with st.form("user_inputs"):
     if submitted:
         
         prediction_input = [[Age, Annual_Income, Spending_Score]]
-        cluster_pickle = open(r"models\Cluster_Model_k6.pkl", "rb")
+        cluster_pickle = open(r"models/Cluster_Model_k6.pkl", "rb")
         cluster_model = pickle.load(cluster_pickle)
         cluster_pickle.close()    
-        cluster_df = read_csv(r"data\3d_cluster_df.csv")
-        centers_df = read_csv(r"data\Cluster_centers_3d.csv")
+        cluster_df = read_csv(r"data/3d_cluster_df.csv")
+        centers_df = read_csv(r"data/Cluster_centers_3d.csv")
         
         new_prediction = cluster_model.predict(prediction_input)
             
@@ -45,7 +45,7 @@ with st.form("user_inputs"):
         st.write(f"The customer is predicted to be in cluster {new_prediction[0]}.")
 
         
-        corr_df = read_csv(r"data\mall_customers.csv")
+        corr_df = read_csv(r"data/mall_customers.csv")
         
 
         st.subheader("Figures and Data")

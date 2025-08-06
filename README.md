@@ -25,6 +25,8 @@ Pandas and NumPy: For data preprocessing and manipulation.
 
 Matplotlib and Seaborn: For exploratory data analysis and visualization.
 
+Plotly: Plotting 3-Dimensional scatter plot of customer data (clusters)
+
 # Model
 The predictive model was trained using a Mall Customer dataset which has multiple copies available on Kaggle.
 
@@ -32,8 +34,10 @@ The predictive model was trained using a Mall Customer dataset which has multipl
 If you want to run the application locally, follow these steps:
 
 1. Clone the repository:
+```bash
 git clone https://github.com/your-username/customer-cluster-app.git
 cd customer-cluster-app
+```
 2. Create and activate a virtual environment:
 ```bash
 python -m venv env
@@ -45,6 +49,6 @@ pip install -r requirements.txt
 ```
 4. Run the Streamlit application:
 ```bash
-streamlit run app.py
+streamlit run Cust_Cluster_app_streamlit.py
 ```
 # Note that some filepaths may need to be changed based on the local system (Windows vs. Linux) (backslash vs. forward slash)
